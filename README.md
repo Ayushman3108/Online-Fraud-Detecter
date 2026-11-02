@@ -1,138 +1,177 @@
-React + Vite
-# 🌿 Harvestly — Premium Grocery E-Commerce
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-A visually distinctive, fully functional grocery shopping platform built with **React + Vite**. Inspired by the product discovery and shopping convenience of major e-commerce platforms while maintaining a completely original brand identity designed specifically for grocery retail.
-Currently, two official plugins are available:
----
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-## 🚀 Quick Start
-## React Compiler
-### Prerequisites
-- Node.js v18+ and npm v9+
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-### Installation
-## Expanding the Oxlint configuration
-```bash
-# Install dependencies
-npm install
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Start development server
-npm run dev
-```
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-### Production Build
-```bash
-npm run build
-npm run preview
-```
----
-## 🛍️ Features
-### Shopping Experience
-**Homepage** with hero banner, category tiles, today's deals, fresh picks, popular products, shop-by-need collections, and customer benefits
-- **Product catalog** with 36 products across 10 categories
-- **Search** — real-time search across product name, description, and category
-- **Category filtering** — filter by any of 10 categories
-- **Price range filtering** — 5 price tiers
-- **Sort options** — Featured, Most Popular, Highest Rated, Price (asc/desc), Biggest Savings
-- **Dietary filters** — Organic Only, In Stock Only
-- **Active filter chips** — visually see and remove applied filters
-### Product Cards & Detail
-- Product image with hover zoom
-- Discount badge (%) and Organic badge
-- Star ratings with review count
-- Add-to-cart with inline quantity controls
-- Wishlist toggle (heart button)
-- Full product detail page with related products
-### Cart
-- Add / remove / increment / decrement items
-- Per-item and per-line savings display
-- Free delivery progress bar (free over $50)
-- Tax calculation (8%)
-- Order total calculation
-- **LocalStorage persistence** — cart survives page refresh
-- Empty cart screen with CTA
-### Checkout
-- Multi-field form: name, email, phone, address, city, state, ZIP
-- **Real-time validation** — errors shown on blur and submit
-- Delivery notes field
-- Simulated order placement with animated confirmation
-- Clearly marked as demo (no real payment collected)
-### Wishlist
-- Toggle from any product card or detail page
-- Persisted via LocalStorage
-- View all wishlist items via the Wishlist nav link
----
-## 🗂️ Project Structure
-```
-src/
-├── components/
-├── Header.jsx / Header.css   — Announcement bar, search, cart, category nav, mobile menu
-│   ├── Footer.jsx / Footer.css   — Links, newsletter form, legal
-│   ├── ProductCard.jsx / .css    — Reusable product card with cart + wishlist controls
-├── pages/
-│   ├── Home.jsx / Home.css       — Full homepage
-│   ├── Products.jsx / .css       — Catalog with sidebar filters
-│   ├── ProductDetail.jsx / .css  — Individual product view
-│   ├── Cart.jsx / Cart.css       — Cart management
-│   ├── Checkout.jsx / .css       — Form validation + confirmation
-│   ├── NotFound.jsx              — 404 page
-├── context/
-│   ├── CartContext.jsx            — Cart + Wishlist state (useReducer)
-│   ├── ToastContext.jsx           — Global toast notifications
-├── data/
-│   └── products.js               — 36 products, 10 categories, helper functions
-└── styles/
-    ├── variables.css              — Design tokens (colors, spacing, typography)
-    └── global.css                 — Global reset, utility classes, shared components
-```
----
-## 🎨 Design System
-### Brand Identity
-- **Name:** Harvestly
-- **Tagline:** Farm Fresh, Doorstep Ready
-### Color Palette
-| Token | Value | Use |
-|---|---|---|
-| `--color-primary` | `#2d6a4f` | Deep forest green — primary actions |
-| `--color-primary-dark` | `#1b4332` | Hover states, headings |
-| `--color-primary-light` | `#52b788` | Accents, badges |
-| `--color-cream` | `#fdf8f0` | Warm background |
-| `--color-orange` | `#e07c39` | CTA buttons |
-| `--color-charcoal` | `#1e1e2e` | Text, footer |
-# Typography
-- **Display:** Poppins (headings, brand)
-- **Body:** Inter (readable, modern)
----
-## ⚙️ Tech Stack
-| Technology | Use |
-|---|---|
-| React 19 | UI framework |
-| Vite 8 | Build tooling |
-| React Router v7 | Client-side routing |
-| Context API + useReducer | State management |
-| LocalStorage | Cart + wishlist persistence |
-| CSS3 (plain) | Styling — no CSS frameworks |
-| Unsplash | Product images |
----
-## 📱 Responsive Breakpoints
-| Breakpoint | Behavior |
-|---|---|
-| 320px+ | Single-column, stacked layout |
-| 480px+ | 2-column product grid |
-| 768px+ | Wider grids, sidebar appears |
-| 1024px+ | Full desktop layout |
-| 1440px | Max container width |
----
-## ⚠️ Important Notes
-- **Demo only** — No real payments are collected. No real orders are placed.
-- Checkout form validates inputs but does not submit to any backend.
-- Product images are sourced from Unsplash (public CDN) and require an internet connection.
-- Cart and wishlist data are stored in your browser's LocalStorage.
-## 📦 Available Scripts
-| Command | Description |
-|---|---|
-| `npm run dev` | Start local dev server at http://localhost:5173 |
-| `npm run build` | Build for production (output to `/dist`) |
-| `npm run preview` | Preview the production build locally |
-| `npm run lint` | Lint the codebase |
+
+Online Fraud Detector
+A data-analysis project for exploring online and card transaction fraud patterns using Python, Pandas, NumPy, Matplotlib, and Seaborn. The project reads transaction datasets, summarizes fraud activity, and creates charts to help compare fraudulent and legitimate transactions.
+
+Important: This repository currently includes analysis and visualization code. Do not describe its output as a production-grade real-time fraud prediction system unless a trained prediction model and its deployment are implemented and verified.
+
+Table of Contents
+Overview
+Features
+Technology Stack
+Repository Structure
+How the Analysis Works
+Requirements
+Setup and Installation
+Run the Analysis
+Generated Outputs
+Frontend and Backend
+Troubleshooting
+Limitations
+Overview
+Online payment fraud can be difficult to identify because transaction volumes are large and fraudulent activity may differ from legitimate activity in subtle ways. This project explores transaction data and generates visual summaries of fraud patterns.
+
+The root-level script, Fraud_Analysis.py, is designed to analyze two datasets:
+
+Data/onlinefraud.csv
+Data/synthetic_fraud_data.csv
+It prints basic dataset information and creates visualizations such as transaction-type counts, fraud rates, hourly fraud trends, feature correlations, merchant-category comparisons, and transaction-distance distributions.
+
+Features
+Loads and inspects transaction CSV files.
+Reports row counts, available columns, missing values, and fraud totals.
+Calculates fraud rates by transaction type and merchant category.
+Derives an hour-of-day feature from the step column in the online-fraud dataset.
+Generates charts using Matplotlib and Seaborn.
+Saves generated chart images in the Outputs/ directory.
+Includes a file-monitoring dependency (watchdog) in the analysis script's imports; confirm the script's watcher configuration and behavior in the current source before relying on automatic re-analysis.
+Technology Stack
+Technology	Purpose
+Python	Analysis scripting
+Pandas	Loading, grouping, and summarizing tabular data
+NumPy	Numerical operations and log transformation
+Matplotlib	Chart creation and image export
+Seaborn	Statistical visualizations
+Watchdog	Filesystem monitoring dependency imported by the analysis script
+Frontend	Application interface located in frontend/; inspect its package files for exact framework and commands
+Backend	Server-side code located in backend/; inspect its dependency/configuration files for the exact framework and commands
+Repository Structure
+The repository's top-level layout is:
+
+Online-Fraud-Detecter/
+├── Data/
+│   ├── onlinefraud.csv
+│   └── synthetic_fraud_data.csv
+├── Outputs/
+├── backend/
+├── frontend/
+├── Fraud_Analysis.py
+├── .gitignore
+└── README.md
+The two CSV names above are the input paths expected by Fraud_Analysis.py. The exact filenames and contents currently present in Data/ should be checked before running the script. The folder-level descriptions below are based on the repository layout; the individual contents of frontend/ and backend/ should be documented from their source files.
+
+Root-level files and folders
+Path	Purpose
+Data/	Input datasets used for transaction analysis.
+Outputs/	Destination for the charts generated by the analysis script.
+backend/	Backend application code. Check its dependency and entry-point files for exact setup instructions.
+frontend/	Frontend application code. Check its package/configuration files for exact setup instructions.
+Fraud_Analysis.py	Loads datasets, performs exploratory analysis, and exports visualizations.
+.gitignore	Lists files and directories that Git should leave untracked.
+README.md	Project documentation and setup guide.
+How the Analysis Works
+At a high level, the analysis script follows this process:
+
+Load the datasets from the Data/ directory.
+Inspect the data by displaying row counts, columns, missing-value counts, and fraud totals.
+Prepare features and summaries, including the hour-of-day feature and grouped fraud-rate calculations.
+Create visualizations that compare transaction volumes and fraud patterns.
+Save charts as PNG files in Outputs/.
+Visualizations
+The script is configured to generate the following chart files:
+
+Output file	What it shows
+Transaction_types.png	Transaction counts by transaction type
+Fraud_rate_by_type.png	Fraud rate by transaction type
+Hourly_fraud_trend.png	Fraud counts by derived hour of day
+Balance_correlation_heatmap.png	Correlations among selected balance, amount, and fraud fields
+Amount_distribution.png	Online transaction amount distribution, separated by fraud label
+Merchant_category_fraud.png	Fraud rates across merchant categories
+Card_present_vs_cnp.png	Fraud rates by card type and card-present status
+Distance_from_home_boxplot.png	Distance-from-home comparison by fraud label
+Distance_distribution.png	Distance-from-home distributions by fraud label
+Card_amount_distribution.png	Synthetic/card transaction amount distribution, when the amount column exists
+These files are created when the relevant dataset is available and contains the columns expected by the script.
+
+Requirements
+Python 3.9 or a compatible version supported by the installed packages
+pip
+The input CSV files expected by Fraud_Analysis.py
+Python dependencies imported by the analysis script:
+
+pandas
+numpy
+matplotlib
+seaborn
+watchdog
+Setup and Installation
+1. Clone the repository
+git clone https://github.com/Ayushman3108/Online-Fraud-Detecter.git
+cd Online-Fraud-Detecter
+2. Create and activate a virtual environment (recommended)
+Windows:
+
+python -m venv .venv
+.venv\Scripts\activate
+macOS/Linux:
+
+python3 -m venv .venv
+source .venv/bin/activate
+3. Install the analysis dependencies
+python -m pip install pandas numpy matplotlib seaborn watchdog
+If the repository contains a requirements.txt, use it as the source of truth and install with:
+
+python -m pip install -r requirements.txt
+4. Verify the input data
+Make sure the following paths exist relative to the repository root:
+
+Data/onlinefraud.csv
+Data/synthetic_fraud_data.csv
+If the files are missing or named differently, update the paths in Fraud_Analysis.py or place the datasets at the expected paths. Do not commit sensitive or licensed datasets without permission.
+
+Run the Analysis
+From the repository root, run:
+
+python Fraud_Analysis.py
+The script should print progress and dataset summaries. Generated charts are saved under Outputs/.
+
+If the frontend and backend are intended to run as a web application, start them using the commands defined in their own configuration files. Those commands are not specified here because the nested project files have not yet been verified.
+
+Generated Outputs
+After a successful analysis, open the PNG files in Outputs/ to review the visualizations. The script may overwrite charts with the same filenames on later runs.
+
+The output charts are exploratory summaries. They do not, by themselves, establish that a transaction is fraudulent or provide a calibrated probability of fraud.
+
+Frontend and Backend
+The repository includes frontend/ and backend/ directories. Their exact frameworks, entry points, routes, API endpoints, and environment variables should be documented after reviewing the files inside those directories.
+
+Before deploying the web application:
+
+Keep credentials and API keys in environment variables, not in source control.
+Provide an example environment file with placeholders, if configuration is required.
+Validate and sanitize data received by the backend.
+Avoid exposing private transaction data in logs or API responses.
+Confirm that the frontend and backend are configured to communicate with the correct API URL.
+Troubleshooting
+File not found
+
+Run the command from the repository root.
+Check that the Data/ directory and expected CSV filenames exist.
+Confirm the paths configured in Fraud_Analysis.py.
+Missing Python module
+
+Install the missing package in the active Python environment, or install the project's requirements.txt if present.
+
+Missing column / KeyError
+
+The script expects particular column names, including fields such as isFraud, step, type, amount, oldbalanceOrg, newbalanceOrig, oldbalanceDest, and newbalanceDest for the online-fraud dataset, and is_fraud, merchant_category, card_type, card_present, and distance_from_home for the synthetic dataset. Check the CSV headers and update the analysis code if your dataset schema differs.
+
+No charts appear
+
+Check the terminal for errors and verify that the input dataset exists and contains the required columns. Then inspect the Outputs/ directory.
+
+Limitations
+Results depend on the quality, completeness, and schema of the input datasets.
+The charts support exploratory data analysis; they are not a substitute for a validated fraud-detection model.
+The analysis script expects specific input filenames and column names.
+The exact setup and behavior of the web frontend/backend should be confirmed from their own source files before deployment.
+Do not use this project alone to make consequential financial decisions without validation, testing, monitoring, and appropriate human review.
